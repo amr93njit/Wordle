@@ -30,11 +30,6 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        //Guess "Prompt" Texts. First is invisible, rest appear after.
-        val guessText1 = findViewById<TextView>(R.id.guessText1)
-        val guessText2 = findViewById<TextView>(R.id.guessText2)
-        val guessText3 = findViewById<TextView>(R.id.guessText3)
-
         //Words the user guesses
         val userGuess1 = findViewById<TextView>(R.id.userGuess1)
         val userGuess2 = findViewById<TextView>(R.id.userGuess2)
@@ -60,7 +55,7 @@ class MainActivity : AppCompatActivity() {
         val star = findViewById<ImageView>(R.id.star)
 
         var guesses = 3
-        var count = 0;
+        var count = 0
         var streak = 0
         guessesLeft.text = "$guesses guesses left."
 
@@ -84,7 +79,7 @@ class MainActivity : AppCompatActivity() {
                         editText.setError("Word must only contain letters.")
                         editText.setText("")
                         flag = 1
-                        break;
+                        break
                     }
                 }
             } else { editText.setError("Enter a 4-letter word."); editText.setText(""); flag=1;  }
@@ -103,7 +98,7 @@ class MainActivity : AppCompatActivity() {
                     restartButton.visibility = View.VISIBLE
                     star.visibility=View.VISIBLE
                     guessesLeft.text = ""
-                    resetButton.setAlpha(.5f);
+                    resetButton.setAlpha(.5f)
                     resetButton.setClickable(false)
                 }
                 when (count) {
@@ -118,8 +113,8 @@ class MainActivity : AppCompatActivity() {
                     count = 0
                     guesses = 3
                     submitButton.visibility = View.INVISIBLE
-                    restartButton.visibility = View.VISIBLE;
-                    resetButton.setAlpha(.5f);
+                    restartButton.visibility = View.VISIBLE
+                    resetButton.setAlpha(.5f)
                     resetButton.setClickable(false)
                 }
                 editText.setText("")
@@ -131,14 +126,14 @@ class MainActivity : AppCompatActivity() {
                     userGuess3.text = ""
                     submitButton.visibility = View.VISIBLE
                     restartButton.visibility = View.INVISIBLE
-                    resetButton.setAlpha(1f);
+                    resetButton.setAlpha(1f)
                     resetButton.setClickable(true)
                     star.visibility=View.INVISIBLE
                     winningStreak.text = "Streak: $streak"
                     guessesLeft.text = "3 guesses left."
                     wordToGuess = when (wordList) {
-                        "Name" -> getRandomFourLetterWordName()
-                        "Animal" -> getRandomFourLetterWordAnimal()
+                        "Names" -> getRandomFourLetterWordName()
+                        "Animals" -> getRandomFourLetterWordAnimal()
                         "Food" -> getRandomFourLetterWordFood()
                         else -> getRandomFourLetterWord()
                     }
@@ -159,8 +154,8 @@ class MainActivity : AppCompatActivity() {
             star.visibility = View.INVISIBLE
             winningStreak.text = "Streak: $streak"
             guessesLeft.text = "3 guesses left."
-            if (wordList == "Name") wordToGuess = getRandomFourLetterWordName()
-            else if (wordList == "Animal") wordToGuess = getRandomFourLetterWordAnimal()
+            if (wordList == "Names") wordToGuess = getRandomFourLetterWordName()
+            else if (wordList == "Animals") wordToGuess = getRandomFourLetterWordAnimal()
             else if (wordList == "Food") wordToGuess = getRandomFourLetterWordFood()
             else wordToGuess = getRandomFourLetterWord()
         }
