@@ -32,12 +32,11 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-Gameplay of Winning and Losing
-<img src='wordle.gif' title='Winning and Losing' width='' alt='Winning and Losing' />
-
-Error Handling and Word Lists
-<img src='wordle2.gif' title='Error Handling and Word Lists' width='' alt='Error Handling and Word Lists' />
-GIF created with [ScreenToGif](https://www.screentogif.com/) for Windows. 
+Gameplay of Winning and Losing<br />
+<img src='wordle.gif' title='Winning and Losing' width='' alt='Winning and Losing' /> <br />
+Error Handling and Word Lists<br />
+<img src='wordle2.gif' title='Error Handling and Word Lists' width='' alt='Error Handling and Word Lists' /> <br />
+GIFs created with [ScreenToGif](https://www.screentogif.com/) for Windows. 
 
 ## Notes
 
