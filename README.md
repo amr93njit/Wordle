@@ -43,7 +43,7 @@ GIFs created with [ScreenToGif](https://www.screentogif.com/) for Windows.
 Describe any challenges encountered while building the app.
 - Figuring out spinners for the word list section. It was difficult to find a way to use them in the way I did.
 - Attempting to make an array of textViews an iterate over them. Scrapped this idea as I could not figure it out in an elegant way.
-- Figuring out a way to hide the keyboard. This thread on StackOverflow helped me a lot! https://stackoverflow.com/questions/41790357/close-hide-the-android-soft-keyboard-with-kotlin/41791472#41791472
+- Figuring out a way to hide the keyboard. This [thread on StackOverflow](https://stackoverflow.com/a/45857155) helped me a lot! 
 - General Kotlin syntax and uses; unfamiliar with it and still not completely used to it.
 	
 
